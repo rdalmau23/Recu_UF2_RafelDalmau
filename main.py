@@ -24,7 +24,7 @@ async def user_modify():
     result = user_modify()
     return result
 
-@app.put("/users/modify", response_model=list[dict])
+@app.put("/users/insert", response_model=list[dict])
 async def user_insert():
     result = user_insert()
     return result

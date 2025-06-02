@@ -6,7 +6,7 @@ def connection_db():
         password="1234",
         user="postgres",
         host="localhost",
-        port="8000"
+        port="5432"
     )
     print("Conexió a la bbdd")
     return conn

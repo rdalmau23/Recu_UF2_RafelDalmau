@@ -5,7 +5,7 @@ conn = connect_db.connection_db()
 def modify_user(lastname, direction):
     cursor = conn.cursor()
     sql= """
-    UDATE SET user_lastname = $s, user_direction WHER user_id = $s
+    UDATE SET user_lastname = $s, user_direction WHERE user_id = $s
     """
     values = (lastname, direction )
 
